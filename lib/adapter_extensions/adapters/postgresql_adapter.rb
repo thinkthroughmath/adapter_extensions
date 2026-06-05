@@ -61,7 +61,7 @@ protected
   def do_bulk_load_on_client(file, table_name, options={})
     q = build_copy_command(table_name, options, 'STDIN')
     buffer_size = options[:buffer_size] || DEFAULT_BUFFER_SIZE
-    send_data_to_copy(file, @connection, q, buffer_size)
+    send_data_to_copy(file, raw_connection, q, buffer_size)
   end
 
   def build_copy_command(table_name, options, from)

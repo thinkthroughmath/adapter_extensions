@@ -13,13 +13,12 @@ Gem::Specification.new do |s|
   s.homepage = "https://github.com/activewarehouse/adapter_extensions"
   s.summary = %q{Extensions to Rails ActiveRecord adapters.}
   s.description = %q{Provides various extensions to the Rails ActiveRecord adapters.}
-  s.rubyforge_project = %q{activewarehouse}
-  
   s.required_rubygems_version = ">= 1.3.6"
+  s.required_ruby_version = ">= 3.0"
 
-  s.add_runtime_dependency('rake',                '>= 0.8.3')
-  s.add_runtime_dependency('activesupport',       '>= 3.0.0')
-  s.add_runtime_dependency('activerecord',        '>= 3.0.0')
+  s.add_runtime_dependency('rake',                '>= 13.0')
+  s.add_runtime_dependency('activesupport',       '>= 7.0', '< 8.0')
+  s.add_runtime_dependency('activerecord',        '>= 7.0', '< 8.0')
   s.add_development_dependency('flexmock')
   s.add_development_dependency('cartesian')
 
